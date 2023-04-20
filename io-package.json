@@ -1,0 +1,89 @@
+{
+	"common": {
+		"name": "trashmaster",
+		"version": "0.0.1",
+		"news": {
+			"0.0.1": {
+				"en": "initial release",
+				"de": "Erstveröffentlichung",
+				"ru": "Начальная версия",
+				"pt": "lançamento inicial",
+				"nl": "Eerste uitgave",
+				"fr": "Première version",
+				"it": "Versione iniziale",
+				"es": "Versión inicial",
+				"pl": "Pierwsze wydanie",
+				"zh-cn": "首次出版"
+			}
+		},
+		"title": "Trash Master",
+		"titleLang": {
+			"en": "Trash Master",
+			"de": "Abfallmeister",
+			"ru": "Мастер мусора",
+			"pt": "Mestre da Lixeira",
+			"nl": "Prullenbak meester",
+			"fr": "Maître des ordures",
+			"it": "Maestro dei rifiuti",
+			"es": "maestro de basura",
+			"pl": "Mistrz śmieci",
+			"zh-cn": "垃圾大师"
+		},
+		"desc": {
+			"en": "Get collection dates from your city or municipality's waste management company (if they use abfall.io's API). Use the data for reminders, creation of a waste calendar (among other things for visualization with VIS2 through included widgets ).",
+			"de": "Holen Sie sich Abholtermine vom Abfallentsorgungsunternehmen Ihrer Stadt oder Gemeinde (sofern diese die API von abfall.io verwenden). Nutzen Sie die Daten für Mahnungen, Erstellung eines Abfallkalenders (ua zur Visualisierung mit VIS2 durch mitgelieferte Widgets).",
+			"ru": "Получите информацию о датах сбора от компании по управлению отходами вашего города или муниципалитета (если они используют API abfall.io). Используйте данные для напоминаний, создания календаря отходов (среди прочего для визуализации с помощью VIS2 с помощью встроенных виджетов).",
+			"pt": "Obtenha as datas de coleta da empresa de gerenciamento de resíduos de sua cidade ou município (se eles usarem a API do abfall.io). Use os dados para lembretes, criação de um calendário de resíduos (entre outras coisas para visualização com o VIS2 através dos widgets incluídos).",
+			"nl": "Ontvang ophaaldata van het afvalverwerkingsbedrijf van uw stad of gemeente (als ze de API van abfall.io gebruiken). Gebruik de gegevens voor herinneringen, het maken van een afvalkalender (onder andere voor visualisatie met VIS2 via meegeleverde widgets).",
+			"fr": "Obtenez les dates de collecte auprès de la société de gestion des déchets de votre ville ou municipalité (si elle utilise l'API d'abfall.io). Utilisez les données pour les rappels, la création d'un calendrier des déchets (entre autres pour la visualisation avec VIS2 via les widgets inclus).",
+			"it": "Ottieni le date di raccolta dalla società di gestione dei rifiuti della tua città o comune (se utilizzano l'API di abfall.io). Utilizzare i dati per promemoria, creazione di un calendario dei rifiuti (tra l'altro per la visualizzazione con VIS2 tramite i widget inclusi).",
+			"es": "Obtenga fechas de recolección de la empresa de gestión de residuos de su ciudad o municipio (si utilizan la API de abfall.io). Utilice los datos para recordatorios, creación de un calendario de residuos (entre otras cosas para visualización con VIS2 a través de widgets incluidos).",
+			"pl": "Uzyskaj daty odbioru od firmy zajmującej się gospodarką odpadami w Twoim mieście lub gminie (jeśli korzystają z API abfall.io). Wykorzystaj dane do przypominania, tworzenia kalendarza odpadów (między innymi do wizualizacji z VIS2 poprzez dołączone widżety).",
+			"zh-cn": "从您所在城市或市政当局的废物管理公司获取收集日期（如果他们使用 abfall.io 的 API）。将数据用于提醒、创建废弃日历（除其他外，通过包含的小部件使用 VIS2 进行可视化）。"
+		},
+		"authors": ["formifan2002 <d.behrendt@web.de>"],
+		"keywords": [
+			"waste",
+			"waste calendar",
+			"garbage",
+			"garbage calendar",
+			"waste management",
+			"VIS2 widget",
+			"reminder"
+		],
+		"license": "MIT",
+		"platform": "Javascript/Node.js",
+		"main": "build/main.js",
+		"icon": "trashmaster.png",
+		"enabled": true,
+		"extIcon": "https://raw.githubusercontent.com/formifan2002/ioBroker.trashmaster/main/admin/trashmaster.png",
+		"readme": "https://github.com/formifan2002/ioBroker.trashmaster/blob/main/README.md",
+		"loglevel": "info",
+		"mode": "schedule",
+		"allowInit": true,
+		"type": "misc-data",
+		"compact": true,
+		"connectionType": "cloud",
+		"dataSource": "poll",
+		"adminUI": {
+			"config": "materialize"
+		},
+		"eraseOnUpload": true,
+		"dependencies": [
+			{
+				"js-controller": ">=3.3.22"
+			}
+		],
+		"globalDependencies": [
+			{
+				"admin": ">=5.0.0"
+			}
+		]
+	},
+	"native": {
+		"option1": true,
+		"option2": "42"
+	},
+	"objects": [],
+	"instanceObjects": []
+}
