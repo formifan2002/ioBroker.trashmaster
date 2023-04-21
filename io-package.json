@@ -19,7 +19,7 @@
 		"title": "Trash Master",
 		"titleLang": {
 			"en": "Trash Master",
-			"de": "Abfallmeister",
+			"de": "Abfall-Meister",
 			"ru": "Мастер мусора",
 			"pt": "Mestre da Lixeira",
 			"nl": "Prullenbak meester",
@@ -49,25 +49,51 @@
 			"garbage calendar",
 			"waste management",
 			"VIS2 widget",
-			"reminder"
+			"reminder",
+			"Abfall",
+			"Muell",
+			"Kalender"
 		],
 		"license": "MIT",
 		"platform": "Javascript/Node.js",
-		"main": "build/main.js",
+		"main": "main.js",
 		"icon": "trashmaster.png",
 		"enabled": true,
 		"extIcon": "https://raw.githubusercontent.com/formifan2002/ioBroker.trashmaster/main/admin/trashmaster.png",
 		"readme": "https://github.com/formifan2002/ioBroker.trashmaster/blob/main/README.md",
 		"loglevel": "info",
+		"messagebox": true,
 		"mode": "schedule",
+		"schedule": "5 0 * * *",
 		"allowInit": true,
+		"systemconfig": true,
 		"type": "misc-data",
 		"compact": true,
 		"connectionType": "cloud",
 		"dataSource": "poll",
+		"visWidgets": {
+            "i18n": "component",
+            "vis2trashmasterWidgets": {
+                "name": "vis2trashmasterWidgets",
+                "url": "trashmaster/customWidgets.js",
+                "components": [
+                    "TrashIcon",
+                    "TrashTable"
+                ]
+            }
+        },
 		"adminUI": {
 			"config": "materialize"
 		},
+		"restartAdapters": [
+            "vis",
+            "vis-2-beta"
+        ],
+		"plugins": {
+            "sentry": {
+                "dsn": "https://21d5a1cac2f740708b0652b8098946ad@o4505046522724352.ingest.sentry.io/4505050695270400"
+            }
+        },
 		"eraseOnUpload": true,
 		"dependencies": [
 			{
@@ -80,10 +106,60 @@
 			}
 		]
 	},
-	"native": {
-		"option1": true,
-		"option2": "42"
-	},
+    "native": {
+        "url": "",
+        "city": "",
+        "district": "",
+        "street": "",
+        "houseNumber": "",
+        "key": "",
+        "wasteTypes": [],
+        "whatsapp": {
+            "alive": false,
+            "used": false,
+            "instances": {}
+        },
+        "wasteCalendar": [],
+        "createDatapoints": false
+    },
 	"objects": [],
-	"instanceObjects": []
+    "instanceObjects": [
+        {
+            "_id": "WasteCalendar",
+            "type": "state",
+            "common": {
+                "name": {
+                    "de": "Abfallkalender JSON",
+                    "en": "Waste calender JSON",
+                    "es": "Calendario de residuos JSON",
+                    "fr": "Calendrier des déchets JSON",
+                    "it": "Calendario dei rifiuti JSON",
+                    "nl": "Afvalkalender JSON",
+                    "pl": "Kalendarz odpadów JSON",
+                    "pt": "Desperdício JSON do calendário",
+                    "ru": "Календарь отходов JSON",
+                    "uk": "Календар відходів JSON",
+                    "zh-cn": "废历JSON"
+                },
+                "desc": {
+                    "de": "Abfallkalender im JSON-Format",
+                    "en": "Waste calendar in JSON format",
+                    "es": "Calendario de residuos en formato JSON",
+                    "fr": "Calendrier des déchets au format JSON",
+                    "it": "Calendario dei rifiuti in formato JSON",
+                    "nl": "Afvalkalender in JSON-formaat",
+                    "pl": "Kalendarz odpadów w formacie JSON",
+                    "pt": "Calendário de resíduos no formato JSON",
+                    "ru": "Календарь отходов в формате JSON",
+                    "uk": "Календар відходів у форматі JSON",
+                    "zh-cn": "JSON 格式的垃圾日历"
+                },
+                "type": "string",
+                "role": "text",
+                "read": true,
+                "write": false
+            },
+            "native": {}
+        }
+    ]
 }

@@ -1,4 +1,5 @@
 admin/build/
-build/
+src-widgets/build/
+widgets/
 .prettierrc.js
 **/.eslintrc.js

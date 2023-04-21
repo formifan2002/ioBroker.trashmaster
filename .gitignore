@@ -2,10 +2,19 @@
 .*/
 !.vscode/
 !.github/
+!.yarn/
 
 *.code-workspace
+*.bak
 node_modules
 nbproject
+admin/build
+src-widgets/build
+src-widgets/node_modules
+
+.prettierr.js
+.prettierrignore
+toBeDeleted.create-adapter.json
 
 # npm package files
 iobroker.*.tgz
