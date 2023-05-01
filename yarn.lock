@@ -246,20 +246,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@date-io/dayjs@npm:^2.16.0":
-  version: 2.16.0
-  resolution: "@date-io/dayjs@npm:2.16.0"
-  dependencies:
-    "@date-io/core": ^2.16.0
-  peerDependencies:
-    dayjs: ^1.8.17
-  peerDependenciesMeta:
-    dayjs:
-      optional: true
-  checksum: bb8192207addbf6430c35da7664b97761f87d2c6cf4a3eaf464584a980e6cecaede581af1a40c5ba0a0189dc6bff2ac16408a95ec88e542b16915430191298c8
-  languageName: node
-  linkType: hard
-
 "@date-io/hijri@npm:^2.16.1":
   version: 2.16.1
   resolution: "@date-io/hijri@npm:2.16.1"
@@ -727,28 +713,28 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@iobroker/adapter-react-v5@npm:^4.0.24":
-  version: 4.0.24
-  resolution: "@iobroker/adapter-react-v5@npm:4.0.24"
+"@iobroker/adapter-react-v5@npm:^4.0.25":
+  version: 4.0.25
+  resolution: "@iobroker/adapter-react-v5@npm:4.0.25"
   dependencies:
     "@emotion/react": ^11.10.6
     "@emotion/styled": ^11.10.6
     "@iobroker/socket-client": ^2.0.7
-    "@mui/icons-material": ^5.11.11
-    "@mui/material": ^5.11.15
-    "@mui/styles": ^5.11.13
-    "@mui/x-date-pickers": 6.0.4
-    "@sentry/browser": ^7.46.0
-    "@sentry/integrations": ^7.46.0
+    "@mui/icons-material": ^5.11.16
+    "@mui/material": ^5.12.1
+    "@mui/styles": ^5.12.0
+    "@mui/x-date-pickers": 6.2.1
+    "@sentry/browser": ^7.49.0
+    "@sentry/integrations": ^7.49.0
     "@types/iobroker": ^4.0.5
     react-color: ^2.19.3
     react-colorful: ^5.6.1
-    react-cropper: ^2.3.2
+    react-cropper: ^2.3.3
     react-dropzone: ^14.2.3
     react-icons: ^4.8.0
     react-inlinesvg: ^3.0.2
     react-text-mask: ^5.5.0
-  checksum: 67ecb23e647d34df4eb6ffcf043f5410026d3381b5508a44dbf7ea0493f3af9c5d4477d8c14b7943db2019607b8719db3c6ea4466fc28715edf9d35eeed2954c
+  checksum: e6837da8bf9cbdf2a7613ef3450a3f04255c2afa2f18d6af51c7d314a9f07ac1813cec631f85fc293e93aef531de14bb84416a68b1418317d967163eeb27823e
   languageName: node
   linkType: hard
 
@@ -835,7 +821,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mui/icons-material@npm:^5.11.11":
+"@mui/icons-material@npm:^5.11.11, @mui/icons-material@npm:^5.11.16":
   version: 5.11.16
   resolution: "@mui/icons-material@npm:5.11.16"
   dependencies:
@@ -881,7 +867,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mui/material@npm:^5.11.15, @mui/material@npm:^5.12.1":
+"@mui/material@npm:^5.12.1":
   version: 5.12.1
   resolution: "@mui/material@npm:5.12.1"
   dependencies:
@@ -952,7 +938,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mui/styles@npm:^5.11.13, @mui/styles@npm:^5.12.0":
+"@mui/styles@npm:^5.12.0":
   version: 5.12.0
   resolution: "@mui/styles@npm:5.12.0"
   dependencies:
@@ -1056,15 +1042,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mui/x-date-pickers@npm:6.0.4":
-  version: 6.0.4
-  resolution: "@mui/x-date-pickers@npm:6.0.4"
+"@mui/x-date-pickers@npm:6.2.1":
+  version: 6.2.1
+  resolution: "@mui/x-date-pickers@npm:6.2.1"
   dependencies:
     "@babel/runtime": ^7.21.0
     "@date-io/core": ^2.16.0
     "@date-io/date-fns": ^2.16.0
     "@date-io/date-fns-jalali": ^2.16.0
-    "@date-io/dayjs": ^2.16.0
     "@date-io/hijri": ^2.16.1
     "@date-io/jalaali": ^2.16.1
     "@date-io/luxon": ^2.16.1
@@ -1077,8 +1062,9 @@ __metadata:
   peerDependencies:
     "@emotion/react": ^11.9.0
     "@emotion/styled": ^11.8.1
-    "@mui/material": ^5.4.1
-    "@mui/system": ^5.4.1
+    "@mui/base": ^5.0.0-alpha.87
+    "@mui/material": ^5.8.6
+    "@mui/system": ^5.8.0
     date-fns: ^2.25.0
     date-fns-jalali: ^2.13.0-0
     dayjs: ^1.10.7
@@ -1107,7 +1093,7 @@ __metadata:
       optional: true
     moment-jalaali:
       optional: true
-  checksum: c1fd2663ce0dace598448f156507bc63ee95203554c36d98db82a85b19dde3aabec789fb554d522c0dc31701987c16383cfbc619ed7f3274836d23d707d87f3e
+  checksum: f06eb6a89eafddbfd806e9296b2814b8de030a34d1eaecab6993ecfd9fd892f2d697ca98e31458fb2b0f41404008cedc652b912eb89eb3ac5f23baabd6de798b
   languageName: node
   linkType: hard
 
@@ -1252,80 +1238,80 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sentry-internal/tracing@npm:7.49.0":
-  version: 7.49.0
-  resolution: "@sentry-internal/tracing@npm:7.49.0"
+"@sentry-internal/tracing@npm:7.50.0":
+  version: 7.50.0
+  resolution: "@sentry-internal/tracing@npm:7.50.0"
   dependencies:
-    "@sentry/core": 7.49.0
-    "@sentry/types": 7.49.0
-    "@sentry/utils": 7.49.0
+    "@sentry/core": 7.50.0
+    "@sentry/types": 7.50.0
+    "@sentry/utils": 7.50.0
     tslib: ^1.9.3
-  checksum: 765e15b26e5074acb49f7b18f1eac9171cd00f19d9c7b311af1da05d5a8f8e114ee99512deeb9a85e2759ffea521a392da5edda529485abe5d519a3047ca02bf
+  checksum: 5015b91bffa97a78522b1638d409074682b60bfd2a600e0bfb191ce6afd6dd7ee4fcdbf7cdd818142313001b77033b980a8645bfb9939bf123e3513a29d097ad
   languageName: node
   linkType: hard
 
-"@sentry/browser@npm:^7.46.0":
-  version: 7.49.0
-  resolution: "@sentry/browser@npm:7.49.0"
+"@sentry/browser@npm:^7.49.0":
+  version: 7.50.0
+  resolution: "@sentry/browser@npm:7.50.0"
   dependencies:
-    "@sentry-internal/tracing": 7.49.0
-    "@sentry/core": 7.49.0
-    "@sentry/replay": 7.49.0
-    "@sentry/types": 7.49.0
-    "@sentry/utils": 7.49.0
+    "@sentry-internal/tracing": 7.50.0
+    "@sentry/core": 7.50.0
+    "@sentry/replay": 7.50.0
+    "@sentry/types": 7.50.0
+    "@sentry/utils": 7.50.0
     tslib: ^1.9.3
-  checksum: 4a7ff0cf566937b59f892d52453895dea0e9b689f6fa0f725909171afc9d2e692ccb767cd277b325355fb4406dc17bbd1398ed9b3a291cd1d83a67e9377335b8
+  checksum: fa875610045380cdf8469f4267d149af7e89713137313db2ae671ce9c61eca15bb7a233dd8eeae3f09cb7bfa23bbdfc9e0aca5900ad48d90b25a231f5f87426c
   languageName: node
   linkType: hard
 
-"@sentry/core@npm:7.49.0":
-  version: 7.49.0
-  resolution: "@sentry/core@npm:7.49.0"
+"@sentry/core@npm:7.50.0":
+  version: 7.50.0
+  resolution: "@sentry/core@npm:7.50.0"
   dependencies:
-    "@sentry/types": 7.49.0
-    "@sentry/utils": 7.49.0
+    "@sentry/types": 7.50.0
+    "@sentry/utils": 7.50.0
     tslib: ^1.9.3
-  checksum: b1222afd09d219c990e2a8df136c6e540bd13f26616331f3d4e143182b6b4b550426b165dafc52e504a4bff111b634c756202656b383557e4cb3f2ff58022e1b
+  checksum: d372d6235355e6e63eb82146e1944a323b5b6303f6a4f7df6a39a9713f3a9c4aebb68d3de43178a6028c7b2d6d68a2f7a34c08e33cf45c0596b46ae6fd2bf83e
   languageName: node
   linkType: hard
 
-"@sentry/integrations@npm:^7.46.0":
-  version: 7.49.0
-  resolution: "@sentry/integrations@npm:7.49.0"
+"@sentry/integrations@npm:^7.49.0":
+  version: 7.50.0
+  resolution: "@sentry/integrations@npm:7.50.0"
   dependencies:
-    "@sentry/types": 7.49.0
-    "@sentry/utils": 7.49.0
+    "@sentry/types": 7.50.0
+    "@sentry/utils": 7.50.0
     localforage: ^1.8.1
     tslib: ^1.9.3
-  checksum: 547d3bf84e9abfa7a6ab80e7a2589293657166334a9fb75d221f4fa0f8d6327f35b4c2e5bea3f87ea0306392908c159ce3961ceb04f06e82ee656d39aa0cf4d6
+  checksum: fad3c7cdf2ae638bb609b57a22af3d9111381b8655e33ef607dd1b13634aecd7644a04d58006ceabd82b7b6c1a9b73bf2403b0b875d0c99229712bbf794be4b7
   languageName: node
   linkType: hard
 
-"@sentry/replay@npm:7.49.0":
-  version: 7.49.0
-  resolution: "@sentry/replay@npm:7.49.0"
+"@sentry/replay@npm:7.50.0":
+  version: 7.50.0
+  resolution: "@sentry/replay@npm:7.50.0"
   dependencies:
-    "@sentry/core": 7.49.0
-    "@sentry/types": 7.49.0
-    "@sentry/utils": 7.49.0
-  checksum: 0789ead51e2284fcf6871ba11c4b022de608b31354aa1c1fc30bb26811bad3e353a80dfb2a1517b1567c39be80e263e67f4d5d1efb0747048ee173d855daa308
+    "@sentry/core": 7.50.0
+    "@sentry/types": 7.50.0
+    "@sentry/utils": 7.50.0
+  checksum: 3ad1d6af5a74a8896c7bad99a7bc38ebd8cd60824e4d9a1ddc2b240a5bf9215aef0c387a43169e625fba00ae39a8cb27efe27d6ddb6c5c6002d1a2b445740374
   languageName: node
   linkType: hard
 
-"@sentry/types@npm:7.49.0":
-  version: 7.49.0
-  resolution: "@sentry/types@npm:7.49.0"
-  checksum: c6665e5ea14aa0288a44daf0ccbf8ab3134ec7ab61a6cda57e233c865a9c1ca3a9e45b5ab75705d2d3506c357e08cc500a550794fe6e888d363e0254b46c057b
+"@sentry/types@npm:7.50.0":
+  version: 7.50.0
+  resolution: "@sentry/types@npm:7.50.0"
+  checksum: 9f058231bf22ca9b1e83cf43607be5d7f174a75ac0477b3c565fec7e9431897b10aadfac94cf7eb5d84888e3520383ea2f4176cf2ad3928a8da78fc8b2e2481d
   languageName: node
   linkType: hard
 
-"@sentry/utils@npm:7.49.0":
-  version: 7.49.0
-  resolution: "@sentry/utils@npm:7.49.0"
+"@sentry/utils@npm:7.50.0":
+  version: 7.50.0
+  resolution: "@sentry/utils@npm:7.50.0"
   dependencies:
-    "@sentry/types": 7.49.0
+    "@sentry/types": 7.50.0
     tslib: ^1.9.3
-  checksum: b3382418fbc98a685c3c01571ef24217d8cbcb283f8e12e2e44a518d9697e9fadcaa48c24e31063ecad6a13f3fc7b0caf0dcb8e7c0097bc2613e8f465de5d0be
+  checksum: 0fdb94a46d19d9b98b9be2cd2e7f8c4c54b7c9d92091cec2f1093388398d8a400be346a71108edf2b3351ee57edb6f77a0bff7026a9f1b9d91699a6a8c08f49b
   languageName: node
   linkType: hard
 
@@ -6288,7 +6274,7 @@ __metadata:
     "@alcalzone/release-script-plugin-manual-review": ^3.5.9
     "@iobroker/adapter-core": ^2.6.8
     "@iobroker/adapter-dev": ^1.2.0
-    "@iobroker/adapter-react-v5": ^4.0.24
+    "@iobroker/adapter-react-v5": ^4.0.25
     "@iobroker/testing": ^4.1.0
     "@mui/icons-material": ^5.11.11
     "@mui/lab": ^5.0.0-alpha.122
@@ -9767,7 +9753,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-cropper@npm:^2.3.2":
+"react-cropper@npm:^2.3.3":
   version: 2.3.3
   resolution: "react-cropper@npm:2.3.3"
   dependencies:
